@@ -21,7 +21,8 @@ gcloud config set compute/zone us-east1-b
 gcloud container clusters create kraken-prod \
           --num-nodes 2 \
           --network kraken-prod-vpc \
-          --subnetwork kraken-prod-subnet
+          --subnetwork kraken-prod-subnet\
+          --zone us-east1-b
 
 gcloud container clusters get-credentials kraken-prod
 
